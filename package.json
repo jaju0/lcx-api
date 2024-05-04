@@ -2,14 +2,30 @@
   "type": "module",
   "name": "lcx-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A third party node.js API connector for the LCX Exchange.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/jaju0/lcx-api"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsup"
+  },
+  "keywords": [
+    "lcx",
+    "lcx exchange",
+    "lcx exchange api",
+    "lcx api",
+    "node",
+    "nodejs",
+    "crypto",
+    "cryptocurrency",
+    "bitcoin",
+    "rest api"
+  ],
+  "author": "jaju0",
   "dependencies": {
     "axios": "^1.6.8"
   }
