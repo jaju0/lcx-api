@@ -1,4 +1,5 @@
 import axios, { AxiosInstance, CreateAxiosDefaults } from "axios";
+import { ApiResponse } from "./shared.js";
 
 /**
  * All supported kline timeframes
@@ -187,21 +188,6 @@ export interface TickerRequestParams
     pair: string;
 }
 
-/**
- * @interface ApiResponse
- * @template DataType type of the data field
- */
-export interface ApiResponse<DataType>
-{
-    /** Request specific data */
-    data: DataType;
-    /** length of array data if data is an array */
-    count?: number;
-    /** response message */
-    message: string;
-    /** response status */
-    status: string;
-}
 
 /**
  * Orderbook endpoint response data
